@@ -7,11 +7,11 @@ langbtn.forEach(item  => {
 
     lang =item.innerText;
     
-    if(lang ==="ru"|| lang ==='Ru' || lang ==='RU' || lang ==='rU') {
+    if(lang ==='ru') {
 
         console.log('понедельник вторник среда четерг пятница субота воскресенье');
 
-    } else if (lang === 'en' || lang==='En'|| lang === 'EN' || lang ==='En') {
+    } else if (lang === 'en') {
 
         console.log('Monday  Tuesday  Wednesday  Thursday  Friday  Saturday  Sunday');
     }

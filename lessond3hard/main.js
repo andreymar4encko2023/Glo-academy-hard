@@ -1,43 +1,29 @@
-let langbtn = document.querySelectorAll('.btn')
 
+const lang = prompt('ВВедите ваш язык ru или en', 'ru');
+const langDayArray = {
+  'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+  'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+};
+if (lang === 'ru') {
+    console.log(langDayArray.ru);
+  } else if (lang === 'en') {
+    console.log(langDayArray.en);
+  } else {
+    console.log('вы ввели неверный язык');
+  }
+  switch (lang) {
+    case 'ru':
+      console.log(langDayArray.ru);
+      break;
+    case 'en':
+      console.log(langDayArray.en);
+      break;
+    default:
+      console.log('вы ввели неверный язык');
+  }
+  console.log(langDayArray[lang])
 
-langbtn.forEach(item  => {
+  const namePerson = prompt('введите ваше имя')
 
-   item.addEventListener('click',()=>{
-
-    lang =item.innerText;
-    
-    if(lang ==='ru') {
-
-        console.log('понедельник вторник среда четерг пятница субота воскресенье');
-
-    } else if (lang === 'en') {
-
-        console.log('Monday  Tuesday  Wednesday  Thursday  Friday  Saturday  Sunday');
-    }
-
-   })
-   
-});
-
-                           //  второй вариант
-// lang = prompt('выберите язык ru или en');
-
-//  if(lang === "ru"|| lang === 'Ru' || lang === 'RU' || lang === 'rU'){
-
-//     console.log('понедельник вторник среда четерг пятница субота воскресенье');
-
-//    } else if (lang === 'en' || lang ==='En'|| lang === 'EN' || lang ==='En'); {
-
-//     console.log ('Monday  Tuesday  Wednesday  Thursday  Friday  Saturday  Sunday');    
-
-// } else {
-
-//     console.log('неправильно указан язык попробуйте еще')
-    
-   
-   
-// }
-const namePerson = 'Александр';
-
-namePerson == 'Артем' ? console.log('Директор') : namePerson=='Александр' ? console.log('преподаватель') : console.log('студент');
+namePerson === 'Артем' ? console.log('Директор') :
+namePerson==='Александр' ? console.log('преподаватель') : console.log('студент');

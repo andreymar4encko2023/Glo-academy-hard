@@ -1,0 +1,51 @@
+body{
+  position: relative;
+  background: linear-gradient(to bottom, rgba(20, 21, 22, 0.96) 8%, rgb(137 234 254) 100%);
+  background-image: url(./1661941188_c-27.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+button{
+  border: none;
+  background: rgb(123 124 71 / 50%);
+  padding: 15px;
+  border-radius: 259px;
+  width: 231px;
+  height: 80px;
+  color: coral;
+}
+.rocket {
+  position: absolute;
+  bottom: -12px;
+ 
+  width: 250px;
+  }
+.rocket img{
+  width: 80%;
+
+}
+.planet {
+  position: absolute;
+
+
+}
+
+.planet img {
+  width: 41%;
+  margin-top: 47px;
+  margin-left: -21px;
+}
+.start {
+  position: absolute;
+  bottom: 35px;
+  left: 176px;
+}
+.stop{
+  bottom: 26px;
+  position: absolute;
+  left: 426px;
+  width: 109px;
+  z-index: 9999;
+  height: 90px;
+}
